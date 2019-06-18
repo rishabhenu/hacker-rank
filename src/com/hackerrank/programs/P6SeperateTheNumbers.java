@@ -7,7 +7,7 @@ package com.hackerrank.programs;
  * @result passed submitted
  *
  */
-public class SeperateTheNumbers {
+public class P6SeperateTheNumbers {
 
 	public static void main(String...strings) {
 		String s = "9899100101";
