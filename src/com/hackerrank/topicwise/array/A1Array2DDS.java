@@ -6,6 +6,11 @@ package com.hackerrank.topicwise.array;
  * @source https://www.hackerrank.com/challenges/2d-array/problem?h_l=interview&playlist_slugs%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D=arrays
  * 
  * @result passed all test cases
+ * 
+ * pattern 
+ * 				a[i][j]		a[i][j+1]		a[i][j+2]
+ * 							a[i+1][j+1]
+ * 				a[i+2][j]	a[i+2][j+1]		a[i+2][j+2]
  *
  */
 public class A1Array2DDS {
