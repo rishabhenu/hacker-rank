@@ -1,4 +1,4 @@
-package com.hackerrank.topicwise.array;
+package com.hackerrank.interview.challenges.arrays;
 
 import java.util.Arrays;
 
