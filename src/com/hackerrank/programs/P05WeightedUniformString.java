@@ -15,7 +15,7 @@ import java.util.Map;
  * @source https://www.hackerrank.com/challenges/weighted-uniform-string/problem?utm_campaign=challenge-recommendation&utm_medium=email&utm_source=24-hour-campaign&h_r=next-challenge&h_v=zen
  *
  */
-public class P5WeightedUniformString {
+public class P05WeightedUniformString {
 	
 	public static void main(String...strings) {
 		File file = new File("D://new.txt");

@@ -6,7 +6,7 @@ package com.hackerrank.programs;
  * @source https://www.hackerrank.com/challenges/pangrams/problem?utm_campaign=challenge-recommendation&utm_medium=email&utm_source=24-hour-campaign
  *
  */
-public class P4Pangrams {
+public class P04Pangrams {
 	
 	public static void main(String...strings) {
 		System.out.println((int)'a'+", "+(int)'A');

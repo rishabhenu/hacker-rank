@@ -9,10 +9,10 @@ import java.util.regex.Pattern;
  * @author rishabhenu@gmail.com
  * @source https://www.hackerrank.com/challenges/gem-stones/problem?utm_campaign=challenge-recommendation&utm_medium=email&utm_source=24-hour-campaign
  * 
- * @result 
+ * @result passed all test cases
  *
  */
-public class P7Gemstone {
+public class P08Gemstone {
 	
 	public static void main(String...strings) {
 		String arr[] = new String[] {"ab", "abc", "abc"};

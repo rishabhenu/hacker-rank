@@ -7,7 +7,7 @@ package com.hackerrank.programs;
  *
  * @result passed all test cases
  */
-public class P6FunnyString {
+public class P06FunnyString {
 
 	public static void main(String...strings) {
 		String s = "abcdefg";
