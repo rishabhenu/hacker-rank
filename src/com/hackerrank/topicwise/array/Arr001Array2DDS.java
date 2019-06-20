@@ -13,7 +13,7 @@ package com.hackerrank.topicwise.array;
  * 				a[i+2][j]	a[i+2][j+1]		a[i+2][j+2]
  *
  */
-public class A1Array2DDS {
+public class Arr001Array2DDS {
 
 	public static void main(String...strings) {
 		int arr[][] = new int[][] {{1, 1, 1, 0, 0, 0}, {0, 1, 0, 0, 0, 0}, {1, 1, 1, 0, 0, 0}, {0, 0, 2, 4, 4, 0}, {0, 0, 0, 2, 0, 0}, {0, 0, 1, 2, 4, 0}}; //19 expected
