@@ -15,7 +15,7 @@ import java.util.Arrays;
  *
  */
 
-public class P1QueensAttackII {
+public class P001QueensAttackII {
 	
 	public static void main(String...strings) throws Exception{
 		int n = 100;//1;	//4;	//5;
