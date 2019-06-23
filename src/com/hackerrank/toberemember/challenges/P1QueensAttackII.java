@@ -1,4 +1,4 @@
-package com.hackerrank.programs.toberemember;
+package com.hackerrank.toberemember.challenges;
 
 import java.io.File;
 import java.io.FileWriter;
