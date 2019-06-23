@@ -1,4 +1,4 @@
-package com.hackerrank.programs;
+package com.hackerrank.programs.set1;
 
 public class P10BeautifulString {
 	

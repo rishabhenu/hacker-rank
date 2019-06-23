@@ -1,4 +1,4 @@
-package com.hackerrank.programs;
+package com.hackerrank.programs.set1;
 
 import java.util.HashMap;
 import java.util.Map;
