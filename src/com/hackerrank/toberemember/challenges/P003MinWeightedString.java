@@ -1,7 +1,5 @@
 package com.hackerrank.toberemember.challenges;
 
-import java.util.Arrays;
-
 /**
  * 
  * @author rishabhenu@gmail.com
