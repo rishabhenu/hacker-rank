@@ -10,7 +10,7 @@ import java.util.logging.Logger;
  * @source https://www.hackerrank.com/challenges/matrix-rotation-algo/problem?utm_campaign=challenge-recommendation&utm_medium=email&utm_source=24-hour-campaign
  */
 public class P03MatrixLayerRotation {
-	private static Logger logger = Logger.getLogger(P3MatrixLayerRotation.class.getName());
+	private static Logger logger = Logger.getLogger(P03MatrixLayerRotation.class.getName());
 	public static void main(String...strings) {
 		List<List<Integer>> matrix = new ArrayList<List<Integer>>(); 
 		List<Integer> row = null;
