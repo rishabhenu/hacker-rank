@@ -17,17 +17,26 @@ import java.util.TreeSet;
  * 			
  * 			In the output we have to print all names according to decreasing order of marks obtained <br/>
  * 			If more than one students got same marks, we will print there names in Lexicographical order.
+ * 
+ * @input	first line contains an integer n denoting no of test cases <br/>
+ * 			then following n lines contain String Integer where String is name and Integer is marks. both are separated by space
  */
 public class P02SortMarksAndName {
 
 	public static void main(String... strings) throws NumberFormatException, IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		System.out.println("Enter no of test cases");
 		int testCases = new Integer(br.readLine());
 		Map<Integer, TreeSet<String>> inputMap = new TreeMap<Integer, TreeSet<String>>();
+		System.out.println("Now enter "+testCases+" space separated name and marks pair. After entering one pair, hit enter for next pair");
 		for (int i = 0; i < testCases; i++) {
 			String[] input = br.readLine().split(" ");
 			int marks = new Integer(input[1]);
-			TreeSet<String> set = inputMap.get(marks);
+			TreeSet<String> set = null;
+			if(inputMap.containsKey(marks))
+				set = inputMap.get(marks);
+			else
+				set = new TreeSet<String>();
 			set.add(input[0]);
 			inputMap.put(marks, set);
 		}
@@ -38,6 +47,7 @@ public class P02SortMarksAndName {
 				System.out.println(s + " " + array[i]);
 			}
 		}
+		br.close();
 	}
 
 }
