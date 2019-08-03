@@ -26,29 +26,33 @@ import java.io.InputStreamReader;
  *         
  *         diamond shape and size will be like this
  *         
+ * @input	input is n line containing two space separated values denoting H & W
+ *         
  */
 public class P03DiamondsInRectangle {
 
 	public static void main(String args[]) throws Exception {
 		
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		System.out.println("Enter no of test cases");
 		int testCases = new Integer(br.readLine());
 
 		for (int i = 0; i < testCases; i++) {
+			System.out.println("Enter two space separated numbers denoting Height and Width of rectangle");
 			String input[] = br.readLine().split(" ");
 			long h = new Long(input[0]);
 			long w = new Long(input[1]);
 			long widthDiamonds = w / 2L;
 			long heightDiamonds = h / 4L;
 			long totalDiamonds = (widthDiamonds * heightDiamonds);
-			System.out.println(totalDiamonds);
+//			System.out.println(totalDiamonds);
 			totalDiamonds += ((widthDiamonds - 1L) * (heightDiamonds - 1L));
-			System.out.println(totalDiamonds);
+//			System.out.println(totalDiamonds);
 			if (h % 4L >= 2L && w % 2 < 1) {
-				System.out.println("first if");
+//				System.out.println("first if");
 				totalDiamonds += widthDiamonds - 1L;
 			}
-			System.out.println(totalDiamonds);
+//			System.out.println(totalDiamonds);
 			if (w % 2 >= 1 && h % 4L < 2L) {
 				System.out.println("second if");
 				totalDiamonds += heightDiamonds - 1L;
@@ -57,10 +61,10 @@ public class P03DiamondsInRectangle {
 			if(w % 2 >= 1 && h % 4L >= 2L) {
 				totalDiamonds += (heightDiamonds*widthDiamonds);
 			}
-			System.out.println(totalDiamonds);
+			System.out.println("Total number of diamonds : "+totalDiamonds);
 			long totalArea = w * h;
 			long diamonArea = totalDiamonds * 4;
-
+			System.out.print("Blank area is : ");
 			System.out.println(totalArea - diamonArea);
 		}
 	}
