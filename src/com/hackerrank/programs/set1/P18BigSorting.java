@@ -9,6 +9,11 @@ import java.util.Comparator;
  * 
  * @source https://www.hackerrank.com/challenges/big-sorting/problem?utm_campaign=challenge-recommendation&utm_medium=email&utm_source=24-hour-campaign
  * 
+ * @desc	We are given very very big number in form of String. The numbers are large enough that they can't fit in any mathematical data-type
+ * 
+ * @logic	Basically sort the String treating it as number i.e. if length is not same, then bigger length string is larger (length denotes digits).<br/>
+ * 			if length is same, any first occurrence of character mismatch, the string having lower character will be less. 
+ * 
  * 
  */
 public class P18BigSorting {
@@ -17,7 +22,7 @@ public class P18BigSorting {
 		
 		String input[] = null;
 		input = new String[]{"31415926535897932384626433832795","1","3","10","3","5"};
-		input = new String[] {"3", "3"};
+//		input = new String[] {"3", "3"};
 		printArray(bigSorting(input));			// expected 1,    3,    3,    5,    10,    31415926535897932384626433832795
 		
 	}
@@ -44,6 +49,15 @@ public class P18BigSorting {
 		return input;
 	}
 
+	@SuppressWarnings("unused")
+	@Deprecated
+	/**
+	 * 
+	 * @param input
+	 * @param startIndex
+	 * @param endIndex
+	 * @return	This method is deprecated because it was giving error.
+	 */
 	private static String[] bigSorting(String[] input, int startIndex, int endIndex) {
 		if(input.length == 0 || startIndex >= endIndex)return input;
 		int low = startIndex, high = endIndex;
